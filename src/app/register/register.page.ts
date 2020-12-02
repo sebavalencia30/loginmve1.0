@@ -67,27 +67,7 @@ export class RegisterPage implements OnInit {
 	  		aksi: 'register'
 	  		};
 
-  		this.PostPvdr.postData(body, 'proses-api.php').unsubscribe(async data =>{
-        var alertmsg = data.msg;
-        if(data.success){
-          
-          this.router.navigate(['/login']);
-          const toast = await this.toastCtrl.create({
-            message: 'Registro Completo',
-            duration: 3000
-          });
-          toast.present();
-
-        }else{
-          
-        	const toast = await this.toastCtrl.create({
-            message: alertmsg,
-            duration: 3000
-          	});
-          	toast.present();
-
-        }
-      });
+  		
       }
       }
       }
