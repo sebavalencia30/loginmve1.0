@@ -17,6 +17,6 @@ export class PostProvider {
 		let options = new HttpResponse({ headers: headers });
 
 		return this.http.post(this.server + file, JSON.stringify(body), options)
-		.map(res => res.json());
+		.subscribe(data => {console.log(data);
 	}
 }
