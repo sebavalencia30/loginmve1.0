@@ -67,7 +67,7 @@ export class RegisterPage implements OnInit {
 	  		aksi: 'register'
 	  		};
 
-  		this.PostPvdr.postData(body, 'proses-api.php').Subscriber(async data =>{
+  		this.PostPvdr.postData(body, 'proses-api.php').unsubscribe(async data =>{
         var alertmsg = data.msg;
         if(data.success){
           
