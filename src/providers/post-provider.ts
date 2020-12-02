@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpRequest} from '@angular/common/http';
 import 'import/rxjs/add/operator/map';
 
 
@@ -14,7 +14,7 @@ export class PostProvider {
 	postData(body, file){
 		let type = "application/json; charset=UTF-8";
 		let headers = new HttpHeaders({ 'Content-Type': type });
-		let options = new HttpHeaders({ headers: headers });
+		let options = new HttpRequest({ headers: headers });
 
 		return this.http.post(this.server + file, JSON.stringify(body), options)
 		.map(res => res.json());
