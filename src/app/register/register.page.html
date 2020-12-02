@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrarse MVE-SAMU</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+		<ion-item>
+			<ion-label position="floating">RUT</ion-label>
+			<ion-input type="text" [(ngmodel)]="rut"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating">Nombre</ion-label>
+			<ion-input type="text" [(ngmodel)]="nombre"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating">Apellido</ion-label>
+			<ion-input type="text" [(ngmodel)]="apellido"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating">Dirección</ion-label>
+			<ion-input type="text" [(ngmodel)]="direccion"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating">Celular</ion-label>
+			<ion-input type="text" [(ngmodel)]="celular"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating">E-mail</ion-label>
+			<ion-input type="text" [(ngmodel)]="email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating">Constraseña</ion-label>
+			<ion-input type="pasword" [(ngmodel)]="password"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating">Confirmar constraseña</ion-label>
+			<ion-input type="pasword" [(ngmodel)]="password2"></ion-input>
+		</ion-item>
+	</ion-list>
+	<div>
+		<ion-button expand="block" paddin color="tertiary" fill="outline" (click)="Register()">Registrarse</ion-button>
+		<ion-button expand="block" paddin color="tertiary" (click)="formLogin()">Iniciar Sesion</ion-button>
+ 	</div>
+
+</ion-content>
