@@ -10,9 +10,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import {HttpClient} from '@angular/common/http';
 import {PostProvider} from '../providers/post-provider';
+
+
+
 
 @NgModule({
   declarations: [AppComponent],
